@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local AI Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">✦</span>
+                <h2>Local AI</h2>
+            </div>
+
+            <button class="new-chat" id="clearChat">
+                + New Chat
+            </button>
+
+            <div class="sidebar-info">
+                <p>MODEL</p>
+                <div class="model-name">
+                    <span class="status-dot"></span>
+                    Llama 3.2
+                </div>
+                <small>Powered by Ollama</small>
+            </div>
+
+            <div class="sidebar-footer">
+                Local AI Assistant v2.0
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <h3>AI Assistant</h3>
+                <span class="online-status">
+                    ● Local Model Online
+                </span>
+            </header>
+
+            <section class="chat-area" id="chatArea">
+
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">✦</div>
+
+                    <h1>How can I help you today?</h1>
+
+                    <p>
+                        Your personal AI assistant,
+                        running completely locally.
+                    </p>
+
+                    <div class="suggestions">
+                        <button class="suggestion">
+                            Explain Artificial Intelligence
+                        </button>
+
+                        <button class="suggestion">
+                            Give me Python project ideas
+                        </button>
+
+                        <button class="suggestion">
+                            What is Computer Vision?
+                        </button>
+
+                        <button class="suggestion">
+                            Explain how YOLO works
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer class="input-container">
+                <form id="chatForm">
+
+                    <textarea
+                        id="userInput"
+                        placeholder="Message your AI assistant..."
+                        rows="1"
+                        required
+                    ></textarea>
+
+                    <button type="submit" id="sendButton">
+                        ↑
+                    </button>
+
+                </form>
+
+                <p class="disclaimer">
+                    Local AI can make mistakes.
+                    Verify important information.
+                </p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+</html>
